@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+    font-size: 20px;
+}
+#logo{
+    width: 100px;
+}
+a{
+    text-decoration: none;
+    color: ghostwhite;
+}
+.cabeçalho{
+    background-color: rgb(165, 136, 152);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    margin-left: 10px;
+    list-style: none;
+}
+.menu li a{
+    display: 1 1 200px;
+    margin: 10px;
+}
+img{
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+    display: block;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    margin: 0 auto;
+    gap: 10px;
+}
+.grid>div:nth-child(n+5){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    background-color: pink;
+}
+.grid > div.principal{
+    grid-column: 1;
+    grid-row: 2/5;
+    display: block;
+    background-color: aqua;
+}
+.gridtipo2{
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 20px;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+.corpogrid2{
+    margin-bottom: 10px;
+    border: 5px solid;
+}
+h1{
+    font-size: 30px;
+    text-align: center;
+}
